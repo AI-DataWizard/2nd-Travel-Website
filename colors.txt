@@ -1,0 +1,417 @@
+Dark Red: #8B0000
+Crimson: #DC143C
+Firebrick: #B22222
+Indian Red: #CD5C5C
+Maroon: #800000
+Ruby: #E0115F
+
+Background
+
+#FFFFFF (White)
+#F0F0F0 (Light Gray)
+#FAFAD2 (Light Goldenrod Yellow)
+#F5F5DC (Beige)
+#E6E6FA (Lavender)
+#f3f5f8 (Dim White)
+
+Darker Shades of Lavender
+
+#7B68EE
+#6A5ACD
+#483D8B
+#4B0082
+#8A2BE2
+
+Lighter Shades of Lavender
+
+Lavender #E6E6FA
+Thistle #D8BFD8
+Lavender Blush #FFF0F5
+Lavender Mist #E0E6FA
+Lavender Gray #C4C3D0
+Pale Lavender #DCD0FF
+Lavender Pink #FBAED2
+Pastel Lavender #B39EB5
+French Lilac #8E6BB5
+Mauve #E0B0FF
+
+Red and Pink Mixture
+
+Crimson: #DC143C
+Deep Pink: #FF1493
+Medium Violet Red: #C71585
+Hot Pink: #FF69B4
+Pale Violet Red: #DB7093
+Light Pink: #FFB6C1
+
+Red and Lavender Mixture
+
+Lavender: #E6E6FA
+Lavender Blush: #FFF0F5
+Lavender Pink: #FBAED2
+Pale Lavender: #DCD0FF
+French Lilac: #8E6BB5
+Medium Lavender Magenta: #DDA0DD
+Thistle: #D8BFD8
+Orchid: #DA70D6
+Pale Violet Red: #DB7093
+Crimson: #DC143C
+
+Lighter Shades of Crimson
+
+Light Crimson: #FFA07A
+Light Coral: #F08080
+Light Salmon: #FFA07A
+Light Pink: #FFB6C1
+Light Red: #FFC0CB
+Misty Rose: #FFE4E1
+Light Tomato: #FF6347
+Light Watermelon: #FC6C85
+
+Different Shades of Black
+
+Absolute Black: #000000
+Rich Black: #010203 (a black color with a hint of blue)
+Warm Black: #0C090A (a black color with a hint of red/brown)
+Cool Black: #1F1F1F (a black color with a hint of blue)
+Blue-Black: #040F0F (a black color with a strong blue tone)
+Green-Black: #0A1409 (a black color with a greenish tint)
+Red-Black: #110000 (a black color with a reddish tone)
+Brown-Black: #0A0705 (a black color with a brownish tint)
+Black with Strong Maroon Hue: #2B001E
+
+Colors that contrast light red
+
+Complementary Contrast:
+Light Red: #FFC0CB
+Complementary Color: Dark Green (#006400)
+Complementary Color Code: #006400
+Triadic Contrast:
+Light Red: #FFC0CB
+Triadic Color 1: Cyan (#00FFFF)
+Triadic Color 1 Code: #00FFFF
+Triadic Color 2: Yellow (#FFFF00)
+Triadic Color 2 Code: #FFFF00
+Analogous Contrast:
+Light Red: #FFC0CB
+Analogous Color 1: Light Orange (#FFD700)
+Analogous Color 1 Code: #FFD700
+Analogous Color 2: Light Purple (#E6E6FA)
+Analogous Color 2 Code: #E6E6FA
+
+Lighter Shades of Cyan
+
+Light Cyan:
+
+Color Code: #E0FFFF
+Baby Blue:
+
+Color Code: #89CFF0
+Powder Blue:
+
+Color Code: #B0E0E6
+Pale Turquoise:
+
+Color Code: #AFEEEE
+Light Turquoise:
+
+Color Code: #AEEEEE
+Light Aquamarine:
+
+Color Code: #7FFFD4
+Light Sky Blue:
+
+Color Code: #87CEFA
+Celeste:
+
+Color Code: #B2FFFF
+Electric Blue:
+
+Color Code: #7DF9FF
+Light Cornflower Blue:
+
+Darker Shades of Grey
+
+Dark Grey (#555555)
+Charcoal (#333333)
+Dim Grey (#696969)
+Slate Grey (#708090)
+Gunmetal (#2C3539)
+Ash Grey (#B2BEB5)
+Iron Grey (#43464B)
+Storm Grey (#717C7D)
+Ebony (#555D50)
+Gravel (#4A4E4D)
+
+Lighter Shades of Grey
+
+Light Gray: #D3D3D3
+Silver: #C0C0C0
+Gainsboro: #DCDCDC
+Platinum: #E5E4E2
+Ash Gray: #B2BEB5
+
+Darker Shades of Blue
+
+Dark Blue (#00008B)
+Midnight Blue (#191970)
+Navy Blue (#000080)
+Indigo (#4B0082)
+Royal Blue (#4169E1)
+Slate Blue (#6A5ACD)
+Steel Blue (#4682B4)
+Prussian Blue (#003366)
+Cobalt Blue (#0047AB)
+Teal Blue (#367588)
+
+Header Background Colors
+
+Dark Blue: #34495E
+Light Gray: #EAEAEA
+Deep Red: #B71C1C
+Forest Green: #2E7D32
+Royal Purple: #6A1B9A
+Teal: #00796B
+Soft Orange: #FF9800
+Navy Blue: #1565C0
+Rich Maroon: #800000
+Vibrant Yellow: #FFC107
+
+Hovering Link Colors
+
+Bright Blue: #3498DB
+Bold Green: #2ECC71
+Vibrant Purple: #9B59B6
+Eye-catching Orange: #E74C3C
+Lively Red: #E67E22
+Elegant Dark Gray: #7F8C8D
+Soft Pink: #F39C12
+Deep Teal: #1ABC9C
+Royal Blue: #2980B9
+Radiant Yellow: #F1C40F
+
+Lighter Shades of Grey(Background for Textboxes)
+
+Light Grey: #D3D3D3
+Gainsboro: #DCDCDC
+Silver: #C0C0C0
+Light Slate Grey: #778899
+Lavender Grey: #BDBDBD
+Light Steel Blue: #B0C4DE
+
+Slightly Lighter Shades of Rich Maroon
+
+Original Rich Maroon: #B03060
+Slightly Lighter Maroon: #C04070
+
+Colors to use when using purple
+
+Light Shades:
+
+Light Lavender: #E6E6FA
+Pale Lilac: #DCD0FF
+Lavender Mist: #E0E0F8
+Lilac Haze: #EAE6FF
+Pastel Purple: #F3EFFF
+Dark Shades:
+
+Dark Violet: #9400D3
+Deep Purple: #800080
+Indigo: #4B0082
+Rich Eggplant: #660066
+Royal Purple: #6A0DAD
+
+Complementary Colors:
+
+Yellow: #FFFF00
+Gold: #FFD700
+Lime Green: #00FF00
+Peach: #FFDAB9
+Coral: #FF6F61
+Contrasting Colors:
+
+Teal: #008080
+Orange: #FFA500
+Olive Green: #808000
+Cyan: #00FFFF
+Maroon: #800000
+
+Colors to use when using White
+
+Light Shades:
+
+Ivory: #FFFFF0
+Snow: #FFFAFA
+Floral White: #FFFAF0
+Linen: #FAF0E6
+Cream: #FFFDD0
+
+Dark Shades:
+
+Antique White: #FAEBD7
+Seashell: #FFF5EE
+Ghost White: #F8F8FF
+Light Gray: #D3D3D3
+Gainsboro: #DCDCDC
+
+Complementary Colors:
+
+Black: #000000
+Navy Blue: #000080
+Dark Red: #8B0000
+Forest Green: #228B22
+Royal Blue: #4169E1
+
+Contrasting Colors:
+
+Dark Slate Gray: #2F4F4F
+Tomato: #FF6347
+Medium Purple: #9370DB
+Olive: #808000
+Coral: #FF6F61
+
+Sky Blue
+
+Light Shades:
+
+Light Sky Blue: #87CEFA
+Baby Blue: #89CFF0
+Powder Blue: #B0E0E6
+Celeste: #B2FFFF
+Pale Turquoise: #AFEEEE
+Dark Shades:
+
+Dark Sky Blue: #7B68EE
+Azure: #007FFF
+Steel Blue: #4682B4
+Royal Blue: #4169E1
+Midnight Blue: #191970
+Complementary Colors:
+
+Orange: #FFA500
+Tangerine: #FFA54F
+Coral: #FF6F61
+Red: #FF0000
+Deep Pink: #FF1493
+Contrasting Colors:
+
+Chocolate: #D2691E
+Maroon: #800000
+Gold: #FFD700
+Lime Green: #32CD32
+Tomato: #FF6347
+
+
+ Darker Box Shadow 
+
+ box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1), 0px 1px 3px rgba(0, 0, 0, 0.08);
+
+ Dark Grey Box Shadow
+
+ box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+
+ Linear Gradient for Background Images
+
+ Light: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+ Dark: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+
+ Different Ways to center elements
+
+ Certainly! There are several ways to center an element within another `div` element in CSS. Here are some common methods:
+
+1. **Using Flexbox (Recommended)**:
+
+   This is one of the most flexible and widely used methods for centering elements.
+
+   ```css
+   .container {
+     display: flex;
+     justify-content: center; /* Horizontally center */
+     align-items: center; /* Vertically center */
+   }
+   ```
+
+   This will center the child element both horizontally and vertically within the container.
+
+2. **Using Absolute Positioning**:
+
+   You can use absolute positioning to center an element within a parent container.
+
+   ```css
+   .container {
+     position: relative;
+   }
+
+   .centered-element {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+   }
+   ```
+
+   This method centers the element both horizontally and vertically. The `translate(-50%, -50%)` is used to offset the element by half of its own width and height.
+
+3. **Using Grid**:
+
+   You can also center an element using CSS Grid.
+
+   ```css
+   .container {
+     display: grid;
+     place-items: center;
+   }
+   ```
+
+   This method centers the element both horizontally and vertically.
+
+4. **Using Text Alignment (for inline or inline-block elements)**:
+
+   If the centered element is an inline or inline-block element like text or an inline element with a specified width, you can use text-align.
+
+   ```css
+   .container {
+     text-align: center;
+   }
+
+   .centered-element {
+     display: inline-block;
+   }
+   ```
+
+   This centers the inline or inline-block element horizontally within the container.
+
+5. **Using Margin Auto (for block-level elements)**:
+
+   For block-level elements with a known width, you can use `margin: 0 auto` to center horizontally.
+
+   ```css
+   .centered-element {
+     margin: 0 auto;
+   }
+   ```
+
+   This centers the block-level element horizontally within the container.
+
+Poppins Font
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+  <script src="/js/all.js"></script>
+
+
+Lato Font 
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+Clip Paths for Responsive Navbars
+
+clip-path: polygon(0 0, 100% 0, 100% 0, 0 0); (Hide)
+clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); (Show)
+
+Code for Removing Inner and Outer Spin Buttons
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

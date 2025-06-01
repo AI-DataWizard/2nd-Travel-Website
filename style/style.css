@@ -1,0 +1,647 @@
+/*Common Elements*/
+@font-face {
+  font-family: font;
+  src: url("/fonts/Fira_Sans/FiraSans-Bold.ttf");
+}
+* {
+  font-family: font;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  text-transform: capitalize;
+  text-decoration: none !important;
+  transition: all 0.2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 9rem;
+}
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+html::-webkit-scrollbar-track {
+  background: #000000;
+}
+html::-webkit-scrollbar-thumb {
+  background: #87ceeb;
+}
+
+body {
+  background: #000000;
+  overflow-x: hidden;
+}
+
+section {
+  padding: 3rem 9%;
+}
+
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.7rem;
+  color: #87ceeb;
+  border: 0.1rem solid #87ceeb;
+  border-radius: 5rem;
+  cursor: pointer;
+  background: none;
+}
+.btn:hover {
+  background: #87ceeb;
+  color: #f5f5f5;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.heading span {
+  color: #87ceeb;
+  font-size: 2rem;
+}
+.heading h1 {
+  font-size: 4.5rem;
+  color: #f5f5f5;
+}
+
+/*/Common Elements*/
+/*Header Section*/
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: #333;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 9%;
+}
+.header .menu-btn {
+  font-size: 3rem;
+  color: #f5f5f5;
+  cursor: pointer;
+  display: none;
+}
+.header .logo {
+  font-size: 2.5rem;
+  color: #f5f5f5;
+  font-weight: bolder;
+}
+.header .logo #icon {
+  padding-right: 0.5rem;
+  color: #87ceeb;
+}
+.header .logo span {
+  color: #87ceeb;
+}
+.header .navbar a {
+  color: #f8f8ff;
+  font-size: 1.7rem;
+  display: inline-block;
+  margin: 0 1rem;
+}
+.header .navbar a:hover {
+  color: #87ceeb;
+}
+.header a {
+  margin-top: 0;
+}
+
+/*/Header Section*/
+/*Home Section*/
+.home {
+  margin: 0 auto;
+  margin-top: 9rem;
+  width: 90%;
+  border-radius: 1rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/assets/airverra-homebg.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  padding-bottom: 5rem;
+}
+.home .content {
+  text-align: center;
+}
+.home .content span {
+  font-weight: bolder;
+  color: transparent;
+  -webkit-text-stroke: 0.1rem #f5f5f5;
+  font-size: 4vw;
+  display: block;
+}
+.home .content h3 {
+  font-size: 6vw;
+  color: #f5f5f5;
+}
+.home .content p {
+  font-size: 1.4rem;
+  line-height: 2;
+  color: #edf7fa;
+  padding: 1rem 0;
+  margin-bottom: 0;
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+/*/Home Section*/
+/*Book Form Section*/
+.book-form {
+  width: 85%;
+  margin: 1rem auto;
+  margin-top: -5rem;
+  background: #333;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  padding: 3rem 2rem;
+}
+.book-form form {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.book-form form .inputBox {
+  flex: 1 1 25rem;
+}
+.book-form form .inputBox span {
+  font-size: 1.4rem;
+  color: #edf7fa;
+}
+.book-form form .inputBox input {
+  width: 100%;
+  padding: 1.2rem 1.4rem;
+  border-radius: 5rem;
+  border: 0.1rem solid #87ceeb;
+  font-size: 1.6rem;
+  color: #f8f8ff;
+  text-transform: none;
+  background: none;
+  margin-top: 1rem;
+}
+.book-form form .inputBox input[type=number]::-webkit-inner-spin-button,
+.book-form form .inputBox input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.book-form form .btn {
+  flex: 1 1 15rem;
+}
+
+/*/Book Form Section*/
+/*About Us Section*/
+.about {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 5rem;
+}
+.about .video-con {
+  flex: 1 1 42rem;
+}
+.about .video-con video {
+  border: 0.1rem solid #87ceeb;
+  width: 100%;
+}
+.about .video-con .controls {
+  text-align: center;
+  padding: 2rem 0;
+}
+.about .video-con .controls span {
+  display: inline-block;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  background: #f5f5f5;
+  cursor: pointer;
+  margin: 0.7rem;
+}
+.about .video-con .controls span:hover {
+  background: #87ceeb;
+}
+.about .content {
+  flex: 1 1 42rem;
+  margin-bottom: 5rem;
+}
+.about .content span {
+  color: #87ceeb;
+  font-size: 2rem;
+}
+.about .content h3 {
+  font-size: 4rem;
+  color: #f5f5f5;
+  margin-top: 0.5rem;
+}
+.about .content p {
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #edf7fa;
+  padding: 1rem 0;
+  margin-bottom: 0;
+}
+
+/*/About Us Section*/
+/*Destination Section*/
+.destination .box-con {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2rem;
+}
+.destination .box-con .box {
+  text-align: center;
+  border-radius: 1rem;
+  overflow: hidden;
+  background: #333;
+}
+.destination .box-con .box .image {
+  height: 20rem;
+  width: 100%;
+}
+.destination .box-con .box .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.destination .box-con .box .content {
+  padding: 2rem;
+  text-align: center;
+}
+.destination .box-con .box .content h3 {
+  font-size: 2rem;
+  color: #f5f5f5;
+}
+.destination .box-con .box .content p {
+  font-size: 1.4rem;
+  line-height: 2;
+  color: #edf7fa;
+  padding: 1rem 0;
+  margin-bottom: 0;
+}
+.destination .box-con .box .content a {
+  font-size: 1.7rem;
+  color: #87ceeb;
+}
+.destination .box-con .box .content a:hover #icon {
+  padding-left: 1rem;
+}
+.destination .box-con .box .content a #icon {
+  padding-right: 0.5rem;
+}
+
+/*/Destination Section*/
+/*Services Section*/
+.services .box-con {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2rem;
+}
+.services .box-con .box {
+  background: #333;
+  border-radius: 1rem;
+  padding: 3rem 2rem;
+  text-align: center;
+  border: 0.1rem solid #000000;
+}
+.services .box-con .box:hover {
+  border: 0.1rem solid #87ceeb;
+}
+.services .box-con .box #icon {
+  color: #87ceeb;
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+.services .box-con .box h3 {
+  font-size: 2rem;
+  color: #f5f5f5;
+}
+.services .box-con .box p {
+  font-size: 1.4rem;
+  line-height: 2;
+  color: #edf7fa;
+  padding: 1rem 0;
+  margin-bottom: 0;
+}
+
+/*/Services Section*/
+/*Gallery Section*/
+.gallery .box-con {
+  columns: 3 25rem;
+  column-gap: 1.5rem;
+}
+.gallery .box-con .box {
+  margin-bottom: 1rem;
+  break-inside: avoid;
+}
+.gallery .box-con .box img {
+  width: 100%;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+.gallery .box-con .box span {
+  color: #87ceeb;
+  font-size: 1.4rem;
+}
+.gallery .box-con .box h3 {
+  margin-top: 1rem;
+  font-size: 2rem;
+  color: #f5f5f5;
+}
+
+/*/Gallery Section*/
+/*Reviews Section*/
+.reviews .review-slider {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 2rem;
+}
+.reviews .review-slider .box {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: #333;
+  border-radius: 0.5rem;
+  margin: 0 0.5rem;
+}
+.reviews .review-slider .box img {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 1rem auto;
+}
+.reviews .review-slider .box h3 {
+  font-size: 2rem;
+  color: #f5f5f5;
+}
+.reviews .review-slider .box p {
+  font-size: 1.3rem;
+  line-height: 2;
+  color: #edf7fa;
+  padding: 1rem 0;
+  margin-bottom: 0;
+}
+.reviews .review-slider .box .stars #icon {
+  font-size: 1.5rem;
+  color: yellow;
+}
+
+/*/Reviews Section*/
+/*Blogs Section*/
+.blogs .box-con {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2rem;
+}
+.blogs .box-con .box {
+  border-radius: 1rem;
+  background: #333;
+  overflow: hidden;
+  text-align: center;
+}
+.blogs .box-con .box:hover .image img {
+  transform: scale(1.1);
+}
+.blogs .box-con .box .image {
+  height: 25rem;
+  overflow: hidden;
+  width: 100%;
+}
+.blogs .box-con .box .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.blogs .box-con .box .content {
+  padding: 2rem;
+}
+.blogs .box-con .box .content .link {
+  font-size: 2rem;
+  color: #f5f5f5;
+}
+.blogs .box-con .box .content .link:hover {
+  color: #87ceeb;
+  text-decoration: underline !important;
+}
+.blogs .box-con .box .content p {
+  font-size: 1.4rem;
+  line-height: 2;
+  color: #edf7fa;
+  padding: 1rem 0;
+  margin-bottom: 0;
+}
+.blogs .box-con .box .content .icon {
+  padding-top: 1rem;
+  border-top: 0.1rem solid #87ceeb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.blogs .box-con .box .content .icon a {
+  font-size: 1.4rem;
+  color: #f8f8ff;
+}
+.blogs .box-con .box .content .icon a #icon {
+  padding-right: 0.5rem;
+  color: #87ceeb;
+}
+
+/*/Blogs Section*/
+/*Banner Section*/
+.banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/assets/airverra-banner.jfif") no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 3rem 2rem;
+}
+.banner .content {
+  padding: 2rem;
+  text-align: center;
+}
+.banner .content span {
+  color: #87ceeb;
+  font-size: 1.6rem;
+  font-weight: bolder;
+}
+.banner .content h3 {
+  font-size: 2.5rem;
+  color: #f5f5f5;
+  padding: 1rem 0;
+}
+.banner .content p {
+  font-size: 1.4rem;
+  line-height: 2;
+  color: #edf7fa;
+  padding: 1rem 0;
+  margin-bottom: 0;
+}
+
+/*/Banner Section*/
+/*Footer Section*/
+.footer .box-con {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 2rem;
+}
+.footer .box-con .box {
+  padding: 1rem 0;
+}
+.footer .box-con .box .logo {
+  font-size: 2.5rem;
+  color: #f5f5f5;
+  font-weight: bolder;
+}
+.footer .box-con .box .logo #icon {
+  padding-right: 0.5rem;
+  color: #87ceeb;
+}
+.footer .box-con .box .logo span {
+  color: #87ceeb;
+}
+.footer .box-con .box h3 {
+  font-size: 2.2rem;
+  color: #f5f5f5;
+  padding: 1rem 0;
+}
+.footer .box-con .box p {
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #edf7fa;
+  padding: 1rem 0;
+  margin-bottom: 0;
+}
+.footer .box-con .box .share {
+  padding-top: 1rem;
+}
+.footer .box-con .box .share #icon {
+  height: 2rem;
+  width: 2rem;
+  line-height: 2rem;
+  font-size: 2rem;
+  padding: 1rem;
+  border-radius: 50%;
+  background: #87ceeb;
+  color: #f5f5f5;
+  margin: 0 0.5rem;
+}
+.footer .box-con .box .share #icon:hover {
+  background: #f5f5f5;
+  color: #87ceeb;
+}
+.footer .box-con .box .links {
+  font-size: 1.5rem;
+  color: #edf7fa;
+  padding: 0.75rem 0;
+  display: block;
+}
+.footer .box-con .box .links:hover {
+  color: #87ceeb;
+}
+.footer .box-con .box .links:hover #icon {
+  padding-right: 2rem;
+}
+.footer .box-con .box .links #icon {
+  padding-right: 0.5rem;
+}
+.footer .box-con .box #icon2 {
+  color: #87ceeb;
+  font-size: 1.7rem;
+  padding-right: 0.5rem;
+}
+.footer .box-con .box a {
+  font-size: 1.4rem;
+  color: #f5f5f5;
+}
+.footer .box-con .box form .email {
+  width: 100%;
+  border-radius: 5rem;
+  border: 0.1rem solid #87ceeb;
+  background: none;
+  font-size: 1.5rem;
+  text-transform: none;
+  color: #edf7fa;
+  margin-top: 1rem;
+  padding: 1.3rem;
+}
+
+.credit {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #f5f5f5;
+  padding: 2rem 0;
+  background: #333;
+}
+.credit a {
+  color: #87ceeb;
+  font-weight: bold;
+}
+
+/*/Footer Section*/
+/*Media Queries*/
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+  .header {
+    padding: 1.5rem 2rem;
+  }
+  section {
+    padding: 3rem 2rem;
+  }
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 52.5%;
+  }
+  .header.active .navbar {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  .header .menu-btn {
+    display: block;
+  }
+  .header .navbar {
+    border-top: 0.1rem solid #87ceeb;
+    border-color: #f5f5f5;
+    position: absolute;
+    top: 99%;
+    left: 0;
+    right: 0;
+    background: #333;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  .header .navbar a {
+    margin: 2rem;
+    font-size: 2rem;
+    display: block;
+    position: relative;
+  }
+  .home {
+    margin-top: 10rem;
+  }
+  .home .content span {
+    font-size: 8vw;
+  }
+  .home .content h3 {
+    font-size: 7vw;
+  }
+}
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+  .about .content h3 {
+    font-size: 3.5rem;
+  }
+}
+/*/Media Queries*//*# sourceMappingURL=style.css.map */

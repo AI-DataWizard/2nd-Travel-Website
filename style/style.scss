@@ -1,0 +1,725 @@
+/*Common Elements*/
+$pri: #87ceeb;
+$sec: #4682b4;
+$black: #333;
+$black2: #000000;
+$light-bg: #edf7fa;
+$white: #f5f5f5;
+$gray: #4a4a4a;
+$gray2: #f8f8ff;
+$border: 0.1rem solid $pri;
+$box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+
+@font-face {
+  font-family: font;
+  src: url("/fonts/Fira_Sans/FiraSans-Bold.ttf");
+}
+
+@mixin grid($val) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
+  gap: 2rem;
+}
+
+@mixin title-text($val) {
+  font-size: $val;
+  color: $white;
+}
+
+@mixin graph-text($graphSize) {
+  font-size: $graphSize;
+  line-height: 2;
+  color: $light-bg;
+  padding: 1rem 0;
+  margin-bottom: 0;
+}
+
+* {
+  font-family: font;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  text-transform: capitalize;
+  text-decoration: none !important;
+  transition: all 0.2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 9rem;
+
+  &::-webkit-scrollbar {
+    width: 1rem;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $black2;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $pri;
+  }
+}
+
+body {
+  background: $black2;
+  overflow-x: hidden;
+}
+
+section {
+  padding: 3rem 9%;
+}
+
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.7rem;
+  color: $pri;
+  border: $border;
+  border-radius: 5rem;
+  cursor: pointer;
+  background: none;
+
+  &:hover {
+    background: $pri;
+    color: $white;
+  }
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 2rem;
+  span {
+    color: $pri;
+    font-size: 2rem;
+  }
+  h1 {
+    @include title-text(4.5rem);
+  }
+}
+/*/Common Elements*/
+/*Header Section*/
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: $black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 9%;
+
+  .menu-btn {
+    font-size: 3rem;
+    color: $white;
+    cursor: pointer;
+    display: none;
+  }
+
+  .logo {
+    font-size: 2.5rem;
+    color: $white;
+    font-weight: bolder;
+
+    #icon {
+      padding-right: 0.5rem;
+      color: $pri;
+    }
+
+    span {
+      color: $pri;
+    }
+  }
+
+  .navbar {
+    a {
+      color: $gray2;
+      font-size: 1.7rem;
+      display: inline-block;
+      margin: 0 1rem;
+
+      &:hover {
+        color: $pri;
+      }
+    }
+  }
+
+  a {
+    margin-top: 0;
+  }
+}
+/*/Header Section*/
+/*Home Section*/
+.home {
+  margin: 0 auto;
+  margin-top: 9rem;
+  width: 90%;
+  border-radius: 1rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("/assets/airverra-homebg.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  padding-bottom: 5rem;
+
+  .content {
+    text-align: center;
+
+    span {
+      font-weight: bolder;
+      color: transparent;
+      -webkit-text-stroke: 0.1rem $white;
+      font-size: 4vw;
+      display: block;
+    }
+
+    h3 {
+      @include title-text(6vw);
+    }
+
+    p {
+      @include graph-text(1.4rem);
+      max-width: 60rem;
+      margin: 0 auto;
+    }
+  }
+}
+/*/Home Section*/
+
+/*Book Form Section*/
+.book-form {
+  width: 85%;
+  margin: 1rem auto;
+  margin-top: -5rem;
+  background: $black;
+  border-radius: 1rem;
+  box-shadow: $box-shadow;
+  padding: 3rem 2rem;
+
+  form {
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+
+    .inputBox {
+      flex: 1 1 25rem;
+
+      span {
+        font-size: 1.4rem;
+        color: $light-bg;
+      }
+
+      input {
+        width: 100%;
+        padding: 1.2rem 1.4rem;
+        border-radius: 5rem;
+        border: $border;
+        font-size: 1.6rem;
+        color: $gray2;
+        text-transform: none;
+        background: none;
+        margin-top: 1rem;
+      }
+
+      input[type="number"]::-webkit-inner-spin-button,
+      input[type="number"]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+    }
+
+    .btn {
+      flex: 1 1 15rem;
+    }
+  }
+}
+/*/Book Form Section*/
+
+/*About Us Section*/
+.about {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 5rem;
+
+  .video-con {
+    flex: 1 1 42rem;
+
+    video {
+      border: $border;
+      width: 100%;
+    }
+
+    .controls {
+      text-align: center;
+      padding: 2rem 0;
+
+      span {
+        display: inline-block;
+        height: 2rem;
+        width: 2rem;
+        border-radius: 50%;
+        background: $white;
+        cursor: pointer;
+        margin: 0.7rem;
+
+        &:hover {
+          background: $pri;
+        }
+      }
+    }
+  }
+
+  .content {
+    flex: 1 1 42rem;
+    margin-bottom: 5rem;
+
+    span {
+      color: $pri;
+      font-size: 2rem;
+    }
+
+    h3 {
+      @include title-text(4rem);
+      margin-top: 0.5rem;
+    }
+
+    p {
+      @include graph-text(1.5rem);
+    }
+  }
+}
+/*/About Us Section*/
+
+/*Destination Section*/
+.destination {
+  .box-con {
+    @include grid(30rem);
+    .box {
+      text-align: center;
+      border-radius: 1rem;
+      overflow: hidden;
+      background: $black;
+      .image {
+        height: 20rem;
+        width: 100%;
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+      .content {
+        padding: 2rem;
+        text-align: center;
+        h3 {
+          @include title-text(2rem);
+        }
+        p {
+          @include graph-text(1.4rem);
+        }
+        a {
+          font-size: 1.7rem;
+          color: $pri;
+          &:hover #icon {
+            padding-left: 1rem;
+          }
+          #icon {
+            padding-right: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+/*/Destination Section*/
+
+/*Services Section*/
+.services {
+  .box-con {
+    @include grid(30rem);
+
+    .box {
+      background: $black;
+      border-radius: 1rem;
+      padding: 3rem 2rem;
+      text-align: center;
+      border: 0.1rem solid $black2;
+
+      &:hover {
+        border: $border;
+      }
+
+      #icon {
+        color: $pri;
+        font-size: 4rem;
+        margin-bottom: 1rem;
+      }
+
+      h3 {
+        @include title-text(2rem);
+      }
+
+      p {
+        @include graph-text(1.4rem);
+      }
+    }
+  }
+}
+/*/Services Section*/
+
+/*Gallery Section*/
+.gallery {
+  .box-con {
+    columns: 3 25rem;
+    column-gap: 1.5rem;
+    .box {
+      margin-bottom: 1rem;
+      break-inside: avoid;
+      img {
+        width: 100%;
+        border-radius: 1rem;
+        margin-bottom: 1rem;
+      }
+      span {
+        color: $pri;
+        font-size: 1.4rem;
+      }
+      h3 {
+        margin-top: 1rem;
+        @include title-text(2rem);
+      }
+    }
+  }
+}
+/*/Gallery Section*/
+
+/*Reviews Section*/
+.reviews {
+  .review-slider {
+    @include grid(25rem);
+
+    .box {
+      text-align: center;
+      padding: 3rem 2rem;
+      background: $black;
+      border-radius: 0.5rem;
+      margin: 0 0.5rem;
+
+      img {
+        height: 10rem;
+        width: 10rem;
+        border-radius: 50%;
+        object-fit: cover;
+        margin: 1rem auto;
+      }
+
+      h3 {
+        @include title-text(2rem);
+      }
+      p {
+        @include graph-text(1.3rem);
+      }
+      .stars {
+        #icon {
+          font-size: 1.5rem;
+          color: yellow;
+        }
+      }
+    }
+  }
+}
+/*/Reviews Section*/
+
+/*Blogs Section*/
+.blogs {
+  .box-con {
+    @include grid(30rem);
+    .box {
+      border-radius: 1rem;
+      background: $black;
+      overflow: hidden;
+      text-align: center;
+
+      &:hover {
+        .image {
+          img {
+            transform: scale(1.1);
+          }
+        }
+      }
+
+      .image {
+        height: 25rem;
+        overflow: hidden;
+        width: 100%;
+
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .content {
+        padding: 2rem;
+        .link {
+          @include title-text(2rem);
+
+          &:hover {
+            color: $pri;
+            text-decoration: underline !important;
+          }
+        }
+
+        p {
+          @include graph-text(1.4rem);
+        }
+
+        .icon {
+          padding-top: 1rem;
+          border-top: $border;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          a {
+            font-size: 1.4rem;
+            color: $gray2;
+            #icon {
+              padding-right: 0.5rem;
+              color: $pri;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/*/Blogs Section*/
+
+/*Banner Section*/
+.banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("/assets/airverra-banner.jfif") no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 3rem 2rem;
+  .content {
+    padding: 2rem;
+    text-align: center;
+
+    span {
+      color: $pri;
+      font-size: 1.6rem;
+      font-weight: bolder;
+    }
+
+    h3 {
+      @include title-text(2.5rem);
+      padding: 1rem 0;
+    }
+
+    p {
+      @include graph-text(1.4rem);
+    }
+  }
+}
+/*/Banner Section*/
+
+/*Footer Section*/
+.footer {
+  .box-con {
+    @include grid(25rem);
+
+    .box {
+      padding: 1rem 0;
+
+      .logo {
+        font-size: 2.5rem;
+        color: $white;
+        font-weight: bolder;
+
+        #icon {
+          padding-right: 0.5rem;
+          color: $pri;
+        }
+
+        span {
+          color: $pri;
+        }
+      }
+
+      h3 {
+        @include title-text(2.2rem);
+        padding: 1rem 0;
+      }
+
+      p {
+        @include graph-text(1.5rem);
+      }
+
+      .share {
+        padding-top: 1rem;
+        #icon {
+          height: 2rem;
+          width: 2rem;
+          line-height: 2rem;
+          font-size: 2rem;
+          padding: 1rem;
+          border-radius: 50%;
+          background: $pri;
+          color: $white;
+          margin: 0 0.5rem;
+          &:hover {
+            background: $white;
+            color: $pri;
+          }
+        }
+      }
+
+      .links {
+        font-size: 1.5rem;
+        color: $light-bg;
+        padding: 0.75rem 0;
+        display: block;
+
+        &:hover {
+          color: $pri;
+
+          #icon {
+            padding-right: 2rem;
+          }
+        }
+
+        #icon {
+          padding-right: 0.5rem;
+        }
+      }
+
+      #icon2 {
+        color: $pri;
+        font-size: 1.7rem;
+        padding-right: 0.5rem;
+      }
+
+      a {
+        @include title-text(1.4rem);
+      }
+
+      form {
+        .email {
+          width: 100%;
+          border-radius: 5rem;
+          border: $border;
+          background: none;
+          font-size: 1.5rem;
+          text-transform: none;
+          color: $light-bg;
+          margin-top: 1rem;
+          padding: 1.3rem;
+        }
+      }
+    }
+  }
+}
+.credit {
+  text-align: center;
+  font-size: 2.5rem;
+  color: $white;
+  padding: 2rem 0;
+  background: $black;
+
+  a {
+    color: $pri;
+    font-weight: bold;
+  }
+}
+/*/Footer Section*/
+
+/*Media Queries*/
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+  .header {
+    padding: 1.5rem 2rem;
+  }
+  section {
+    padding: 3rem 2rem;
+  }
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 52.5%;
+  }
+
+  .header {
+    &.active {
+      .navbar {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      }
+    }
+    .menu-btn {
+      display: block;
+    }
+    .navbar {
+      border-top: $border;
+      border-color: $white;
+      position: absolute;
+      top: 99%;
+      left: 0;
+      right: 0;
+      background: $black;
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+
+      a {
+        margin: 2rem;
+        font-size: 2rem;
+        display: block;
+        position: relative;
+      }
+    }
+  }
+
+  .home {
+    margin-top: 10rem;
+
+    .content {
+      span {
+        font-size: 8vw;
+      }
+      h3 {
+        font-size: 7vw;
+      }
+    }
+  }
+}
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+
+  .about {
+    .content {
+      h3 {
+        font-size: 3.5rem;
+      }
+    }
+  }
+}
+/*/Media Queries*/
