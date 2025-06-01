@@ -1,7 +1,7 @@
 /*Common Elements*/
 @font-face {
   font-family: font;
-  src: url("/fonts/Fira_Sans/FiraSans-Bold.ttf");
+  src: url("/2nd-Travel-Website/fonts/Fira_Sans/FiraSans-Bold.ttf");
 }
 * {
   font-family: font;
@@ -121,7 +121,7 @@ section {
   margin-top: 9rem;
   width: 90%;
   border-radius: 1rem;
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/assets/airverra-homebg.jpg") no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/2nd-Travel-Website/assets/airverra-homebg.jpg") no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -459,7 +459,7 @@ section {
 /*/Blogs Section*/
 /*Banner Section*/
 .banner {
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/assets/airverra-banner.jfif") no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/2nd-Travel-Website/assets/airverra-banner.jfif") no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
